@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    position: relative;
+}
+
+.card{    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(15%);
+    background-color: hsl(216, 50%, 16%);
+    height: 478px;
+    width: 290px;
+    align-self: center;
+    border-radius: 10px;
+    
+}
+
+.img{
+background-image: url("/images/image-equilibrium.jpg");
+   height: 250px;
+   margin-right:40px;
+   margin-left:19px;
+   margin-top: 20px;
+   width: 250px;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   border-radius: 10px;
+
+}
+.img:hover .overlay{
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.img:hover .view-img{
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+
+
+.view-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-373%);
+    opacity: 0;
+    color: white;
+}
+
+.overlay{
+    height: 250px;
+    margin-right:40px;
+    margin-left:px;
+    margin-top: 20px;
+    width: 250px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: hsl(178, 100%, 50%);
+}
+
+.equi{
+    color:hsl(0, 0%, 100%);
+    font-size: 18px;
+    margin-left: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.equi:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.par{
+    color:hsl(215, 51%, 70%);
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 20px;
+    margin-top: 13px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.info{
+    display:grid;
+    margin-top: 16px;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 10px;
+    margin-left: 20px;
+}
+
+.ethText{
+    color: hsl(178, 100%, 50%);
+    margin-left: -26px;
+    margin-top: 0px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.clock{
+    margin-left:45px;
+}
+
+.days{
+    color:hsl(215, 51%, 70%);
+    margin-left: -30px;
+  
+    font-family: 'Outfit', sans-serif;
+}
+
+hr{
+    border-color: hsl(216, 22%, 41%);
+    margin-top: 16px;
+    width: 84%;
+    margin-left: 20px;
+    border-top-width: 0.5px;
+}
+
+.creator{
+    display:grid;
+    margin-top: 14px;
+    grid-template-columns: auto auto;
+    margin-left: 20px;
+}
+
+.editor{
+    margin-right: 50px;
+    margin-top: 5px;
+    font-size: 14px;
+    color:hsl(215, 51%, 70%);
+    font-family: 'Outfit', sans-serif;
+}
+
+span{
+    color:hsl(0, 0%, 100%);
+    font-family: 'Outfit', sans-serif;
+}
+
+span:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.avatar{
+    background: hsl(0, 0%, 100%);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+.avatarImg{
+    margin: 1px;
+}
+
